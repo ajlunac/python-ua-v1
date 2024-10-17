@@ -12,7 +12,7 @@ ventana.title("Hola Mundo")
 # Asignamos un tamaño a la ventana de 600x400 pixeles (ancho x alto).
 ventana.geometry("600x400")
 # Configuramos el icono de la ventana.
-ventana.iconbitmap(r"img\icono.ico")
+ventana.iconbitmap(r"resources\img\icono.ico")
 # Configurar el grid layout manager para la ventana.
 ventana.rowconfigure(0, weight=2)
 ventana.rowconfigure(1, weight=10)

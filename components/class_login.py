@@ -8,7 +8,7 @@ class Login(tk.Tk):
         # Ventana principal.
         self.title("Login")
         self.geometry("300x130")
-        self.iconbitmap(r"img\icono.ico")
+        self.iconbitmap(r"resources\img\icono.ico")
         self.resizable(0,0)
 
         # Configuración de la grid.

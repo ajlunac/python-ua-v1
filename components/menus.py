@@ -5,7 +5,7 @@ from tkinter import ttk, messagebox, Menu
 ventana = tk.Tk()
 ventana.title("Manejo de componentes")
 ventana.geometry("600x400")
-ventana.iconbitmap(r"img\icono.ico")
+ventana.iconbitmap(r"resources\img\icono.ico")
 
 
 entrada1 = ttk.Entry(ventana, width=30)

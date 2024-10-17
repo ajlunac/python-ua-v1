@@ -9,7 +9,7 @@ class Componentes(tk.Tk):
         # Ventana principal.
         self.title("Componentes")
         self.geometry("650x400+450+200")
-        self.iconbitmap(r"img\icono.ico")
+        self.iconbitmap(r"resources\img\icono.ico")
         self._crear_tabs()
 
     def _crear_componentes_tabulador1(self, tabulador):
@@ -49,7 +49,7 @@ class Componentes(tk.Tk):
         btnBoton1.grid(row=0, column=1, padx=10, pady=10)
         
     def _crear_componentes_tabulador4(self, tabulador):
-        imagen = tk.PhotoImage(file=r"img\python-logo.png")
+        imagen = tk.PhotoImage(file=r"resources\img\python-logo.png")
         
         def mostrar_titulo():
             messagebox.showinfo("Más info imagen", f"Nombre imagen: {imagen.cget('file')}")

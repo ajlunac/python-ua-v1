@@ -12,7 +12,7 @@ ventana.title("Manejo de componentes")
 # Asignamos un tamaño a la ventana de 600x400 pixeles (ancho x alto).
 ventana.geometry("600x400")
 # Configuramos el icono de la ventana.
-ventana.iconbitmap(r"img\icono.ico")
+ventana.iconbitmap(r"resources\img\icono.ico")
 
 
 entrada1 = ttk.Entry(ventana, width=30)

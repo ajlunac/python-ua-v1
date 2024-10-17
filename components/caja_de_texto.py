@@ -10,7 +10,7 @@ ventana.title("Manejo de componentes.")
 # Asignamos un tamaño a la ventana de 600x400 pixeles (ancho x alto).
 ventana.geometry("600x400")
 # Configuramos el icono de la ventana.
-ventana.iconbitmap(r"img\icono.ico")
+ventana.iconbitmap(r"resources\img\icono.ico")
 
 # Definimos una variable que podremos modificar posteriormente (set), leer(get).
 entrada_var1 = tk.StringVar(value="Valor por defecto")
