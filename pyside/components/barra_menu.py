@@ -1,4 +1,4 @@
-from PySide6.QtGui import QAction, QIcon
+from PySide6.QtGui import QAction, QIcon, QKeySequence
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtWidgets import QMainWindow, QApplication, QLabel, QToolBar, QStatusBar, QCheckBox
  
@@ -52,6 +52,37 @@ class VentanaPrincipal(QMainWindow):
         
         barra.addWidget(QCheckBox('Checkbox'))
         barra.addWidget(QLabel('Salir'))
+        
+        # Menú de la ventana.
+        menu = self.menuBar()
+        menu_archivo = menu.addMenu('&Archivo')
+        menu_archivo.addAction(boton_nuevo)
+        
+        # Agregamos una segunda opción.
+        menu_archivo.addAction(boton_guardar)
+        
+        # Agregamos un separador.
+        menu_archivo.addSeparator()
+        
+        # Agregamos una tercera opción.
+        boton_salir = QAction('Salir', self)
+        menu_archivo.addAction(boton_salir)
+        
+        # Submenu ayuda.
+        menu_ayuda = menu.addMenu('&Ayuda')
+        menu_ayuda.addAction(boton_acercade)
+        
+        # Agregamos un submenu.
+        menu_archivo.addMenu(menu_ayuda)
+        
+        # Creación de atajos para nuestro menú.
+        # Ej. Combinación de teclas.
+        # boton_nuevo.setShortcut(QKeySequence('Ctrl+N'))
+        boton_nuevo.setShortcut(Qt.CTRL | Qt.Key_N)
+        # Atajo acerca de - Ctrl | 1
+        boton_acercade.setShortcut(Qt.CTRL | Qt.Key_1)
+        # Atajo guardar - Ctrl | G
+        boton_guardar.setShortcut(Qt.CTRL | Qt.Key_G)
 
         
     def click_boton_nuevo(self, s):
